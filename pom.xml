@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.geek45</groupId>
+    <artifactId>smart-commons</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <name>smart-commons</name>
+    <description>精简工具类</description>
+    <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.file.encoding>UTF-8</java.file.encoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <maven-source.version>3.0.0</maven-source.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+
+        <fastjson.version>1.2.75</fastjson.version>
+        <httpclient.version>4.5.12</httpclient.version>
+        <commons-collection4.version>4.4</commons-collection4.version>
+        <commons-lang3.version>3.10</commons-lang3.version>
+        <servlet.version>3.1.0</servlet.version>
+        <guava.version>29.0-jre</guava.version>
+        <joda-time.version>2.9.2</joda-time.version>
+        <spring-boot.version>2.6.4</spring-boot.version>
+    </properties>
+
+    <modules>
+        <module>smart-commons-http</module>
+        <module>smart-commons-test</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collection4.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!--joda time-->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>smart-commons-http</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>smart-commons-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>rdc-releases</id>
+            <name>snapshots</name>
+            <url>https://packages.aliyun.com/maven/repository/2019615-snapshot-1eah45/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+
+        <repository>
+            <id>rdc-snapshots</id>
+            <name>releases</name>
+            <url>https://packages.aliyun.com/maven/repository/2019615-release-gAuZKI/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+    </distributionManagement>
+
+    <developers>
+        <!--开发者信息-->
+        <developer>
+            <id>owner</id>
+            <name>rubik</name>
+            <url>https://www.geek45.com</url>
+            <email>rubixgeek795@gmail.com</email>
+            <roles>
+                <role>owner</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <url>https://www.geek45.com</url>
+            <name>极客</name>
+        </license>
+    </licenses>
+</project>

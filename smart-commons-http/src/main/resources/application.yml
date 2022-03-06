@@ -1,0 +1,4 @@
+smart:
+  commons:
+    http:
+      enabled: true

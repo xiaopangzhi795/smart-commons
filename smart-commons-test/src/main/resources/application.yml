@@ -1,0 +1,8 @@
+smart:
+  commons:
+    http:
+      enabled: true
+    ding:
+      mobile: "13781110393"
+      webhook: "https://oapi.dingtalk.com/robot/send?access_token=9b5dca1a71a4e6872a53695eb0f7983656e3d6969cc4fc477e7548c3134fc311"
+      sign: "SEC22bfd002c02d95836e7d88f90f303c9a16c4943de3aa81cd5dfd82f9e785ebce"

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.geek45.httpclient.properties.HttpClientProperties,\
+com.geek45.httpclient.properties.DingProperties

@@ -1,0 +1,118 @@
+{
+  "properties": [
+    {
+      "name": "smart.commons.http.enabled",
+      "description": "是否启用 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "smart.commons.http.tcpNoDelay",
+      "description": "是否立即发送数据，即关闭缓冲区 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "smart.commons.http.socketReuseAddress",
+      "description": "socket关闭时，还没有释放端口时，其他进程是否可以立即重用端口 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "smart.commons.http.socketLinger",
+      "description": "关闭socket时，等待数据发送时间为多久。单位秒 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 60
+    },
+    {
+      "name": "smart.commons.http.socketKeepAlive",
+      "description": "是否监听TCP链接是否有效 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "smart.commons.http.maxTotal",
+      "description": "最大连接数 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 256
+    },
+    {
+      "name": "smart.commons.http.maxPerRoute",
+      "description": "最大路由数量 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 128
+    },{
+      "name": "smart.commons.http.connectionIdleTimeoutSec",
+      "description": "最大空闲时间 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 600
+    },{
+      "name": "smart.commons.http.connectionTimeoutMillis",
+      "description": "链接超时时间 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 3000
+    },{
+      "name": "smart.commons.http.socketTimeoutMillis",
+      "description": "读取超时时间 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 3000
+    },{
+      "name": "smart.commons.http.connectionRequestTimeoutMillis",
+      "description": "从池子中获取连接超时时间 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 10000
+    },{
+      "name": "smart.commons.http.maxRedirects",
+      "description": "重定向最大次数 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 3
+    },{
+      "name": "smart.commons.http.authenticationEnabled",
+      "description": "是否自动处理身份验证 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": true
+    },{
+      "name": "smart.commons.http.retryCount",
+      "description": "默认重试次数 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": 3
+    },{
+      "name": "smart.commons.http.requestSendRetryEnabled",
+      "description": "请求是否自动重试 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": true
+    },{
+      "name": "smart.commons.http.proxyAddress",
+      "description": "请求代理，如： http://192.168.1.1:7890  类型，地址，端口都不可少 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": ""
+    },{
+      "name": "smart.commons.http.userAgent",
+      "description": "客户端标识 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": ""
+    },{
+      "name": "smart.commons.http.maxResponseBytes",
+      "description": "最大返回结果数量 .",
+      "sourceType": "com.geek45.httpclient.properties.HttpClientProperties",
+      "defaultValue": "1024L * 1024 * 10"
+    },
+    {
+      "name": "test.config.ding.webhook",
+      "sourceType": "com.geek45.httpclient.properties.DingProperties",
+      "defaultValue": "https://xxxxxx",
+      "description": "webhook ."
+    },
+    {
+      "name": "test.config.ding.sign",
+      "sourceType": "com.geek45.httpclient.properties.DingProperties",
+      "defaultValue": "xxx",
+      "description": "签名 ."
+    },{
+      "name": "test.config.ding.mobile",
+      "sourceType": "com.geek45.httpclient.properties.DingProperties",
+      "defaultValue": "xxx",
+      "description": "要at的手机号 ."
+    }
+  ]
+}
