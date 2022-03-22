@@ -35,6 +35,7 @@
         <module>smart-commons-lang</module>
         <module>smart-commons-exception</module>
         <module>smart-commons-coder</module>
+        <module>smart-commons-io</module>
     </modules>
 
     <dependencyManagement>
