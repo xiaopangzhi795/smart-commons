@@ -7,7 +7,7 @@ package com.geek45.httpclient.client;
 import com.geek45.httpclient.constant.HttpConstant;
 import com.geek45.httpclient.enums.HttpMethod;
 import com.geek45.httpclient.model.HttpResult;
-import org.apache.commons.lang3.StringUtils;
+import com.geek45.lang.StringUtils;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.*;

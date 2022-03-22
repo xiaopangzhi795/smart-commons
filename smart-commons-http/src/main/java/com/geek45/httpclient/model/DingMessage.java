@@ -6,8 +6,8 @@ package com.geek45.httpclient.model;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Lists;
-import org.apache.commons.lang3.StringUtils;
+import com.geek45.lang.CollectionUtils;
+import com.geek45.lang.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -83,6 +83,42 @@ public class DingMessage {
      */
     private List<Btn> btnList;
 
+    public String getContent() {
+        return content;
+    }
+
+    public String getMsgType() {
+        return msgType;
+    }
+
+    public Boolean getAtAll() {
+        return atAll;
+    }
+
+    public List<String> getAtMobiles() {
+        return atMobiles;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getPicUrl() {
+        return picUrl;
+    }
+
+    public String getMsgUrl() {
+        return msgUrl;
+    }
+
+    public Integer getBtnType() {
+        return btnType;
+    }
+
+    public List<Btn> getBtnList() {
+        return btnList;
+    }
+
     private DingMessage() {
 
     }
@@ -96,7 +132,7 @@ public class DingMessage {
         if (!StringUtils.equalsAny(msgType, TEXT)) {
             throw new IllegalArgumentException("该类型的消息无法at用户，请使用text类型的再进行at操作");
         }
-        atMobiles.addAll(Lists.newArrayList(phone));
+        atMobiles.addAll(CollectionUtils.newArrayList(phone));
         this.atAll = Boolean.FALSE;
         return this;
     }

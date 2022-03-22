@@ -8,8 +8,8 @@ import com.alibaba.fastjson.JSON;
 import com.geek45.httpclient.properties.DingProperties;
 import com.geek45.httpclient.constant.HttpConstant;
 import com.geek45.httpclient.model.DingMessage;
+import com.geek45.lang.StringUtils;
 import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

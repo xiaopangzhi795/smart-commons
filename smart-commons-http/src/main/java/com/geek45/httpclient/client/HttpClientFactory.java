@@ -6,7 +6,7 @@ package com.geek45.httpclient.client;
 
 import com.geek45.httpclient.constant.HttpConstant;
 import com.geek45.httpclient.properties.HttpClientProperties;
-import org.apache.commons.lang3.StringUtils;
+import com.geek45.lang.StringUtils;
 import org.apache.http.HttpHost;
 import org.apache.http.client.HttpRequestRetryHandler;
 import org.apache.http.client.config.RequestConfig;

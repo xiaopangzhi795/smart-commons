@@ -25,11 +25,14 @@
         <guava.version>29.0-jre</guava.version>
         <joda-time.version>2.9.2</joda-time.version>
         <spring-boot.version>2.6.4</spring-boot.version>
+        <codec.version>1.15</codec.version>
     </properties>
 
     <modules>
         <module>smart-commons-http</module>
         <module>smart-commons-test</module>
+        <module>smart-commons-json</module>
+        <module>smart-commons-lang</module>
     </modules>
 
     <dependencyManagement>
@@ -81,11 +84,27 @@
             </dependency>
 
             <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${codec.version}</version>
+            </dependency>
+
+
+            <dependency>
                 <groupId>com.geek45</groupId>
                 <artifactId>smart-commons-http</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>smart-commons-json</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>smart-commons-lang</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.geek45</groupId>
                 <artifactId>smart-commons-test</artifactId>

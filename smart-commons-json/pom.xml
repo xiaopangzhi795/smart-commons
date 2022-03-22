@@ -8,31 +8,16 @@
         <version>1.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>smart-commons-http</artifactId>
-    <name>smart-commons-http</name>
-    <description>smart-commons-http</description>
+    <groupId>com.geek45</groupId>
+    <artifactId>smart-commons-json</artifactId>
+    <name>smart-commons-json</name>
+    <description>smart-commons-json</description>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <scope>provided</scope>
         </dependency>
-
-
-        <dependency>
-            <groupId>com.geek45</groupId>
-            <artifactId>smart-commons-lang</artifactId>
-        </dependency>
-
 
     </dependencies>
 

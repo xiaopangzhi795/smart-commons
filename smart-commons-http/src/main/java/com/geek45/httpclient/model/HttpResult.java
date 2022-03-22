@@ -6,7 +6,7 @@ package com.geek45.httpclient.model;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import org.apache.commons.lang3.StringUtils;
+import com.geek45.lang.StringUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.cookie.Cookie;
