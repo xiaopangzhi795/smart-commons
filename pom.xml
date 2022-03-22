@@ -33,6 +33,8 @@
         <module>smart-commons-test</module>
         <module>smart-commons-json</module>
         <module>smart-commons-lang</module>
+        <module>smart-commons-exception</module>
+        <module>smart-commons-coder</module>
     </modules>
 
     <dependencyManagement>
